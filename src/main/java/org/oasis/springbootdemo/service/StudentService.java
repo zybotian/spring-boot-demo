@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author tianbo
@@ -44,5 +45,9 @@ public class StudentService {
             return id;
         }
         return "update failed";
+    }
+
+    public List<Map<Integer, String>> selectIdName() {
+        return studentDao.selectIdName();
     }
 }

@@ -4,6 +4,7 @@ import org.apache.ibatis.annotations.*;
 import org.oasis.springbootdemo.model.Student;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * @author tianbo
@@ -25,4 +26,7 @@ public interface StudentDao {
 
     @Select("select * from student limit 100")
     List<Student> list();
+
+    @Select("select id, name from student")
+    List<Map<Integer, String>> selectIdName();
 }

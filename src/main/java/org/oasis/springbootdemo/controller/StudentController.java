@@ -41,4 +41,9 @@ public class StudentController {
     public Object update(@RequestParam("id") Integer id, @RequestParam("name") String name) {
         return studentService.update(id, name);
     }
+
+    @GetMapping("/selectMap")
+    public Object selectIdName() {
+        return studentService.selectIdName();
+    }
 }
