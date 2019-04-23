@@ -42,5 +42,9 @@
         <table tableName="student" domainObjectName="Student">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
+
+        <table tableName="message" domainObjectName="Message">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
     </context>
 </generatorConfiguration>
