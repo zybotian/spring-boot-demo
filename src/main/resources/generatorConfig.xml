@@ -46,5 +46,9 @@
         <table tableName="message" domainObjectName="Message">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
+
+        <table tableName="cs_contact_stat" domainObjectName="CsContactStat">
+            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
+        </table>
     </context>
 </generatorConfiguration>
