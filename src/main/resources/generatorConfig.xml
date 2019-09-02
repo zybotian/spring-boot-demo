@@ -14,7 +14,7 @@
         </commentGenerator>
         <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                         connectionURL="jdbc:mysql://localhost:3306/db_test?useUnicode=true&amp;characterEncoding=utf8"
-                        userId="root" password="root">
+                        userId="root" password="123456">
         </jdbcConnection>
 
         <javaTypeResolver>
@@ -40,14 +40,6 @@
         </javaClientGenerator>
 
         <table tableName="student" domainObjectName="Student">
-            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-        </table>
-
-        <table tableName="message" domainObjectName="Message">
-            <generatedKey column="id" sqlStatement="MySql" identity="true"/>
-        </table>
-
-        <table tableName="cs_contact_stat" domainObjectName="CsContactStat">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>
         </table>
     </context>

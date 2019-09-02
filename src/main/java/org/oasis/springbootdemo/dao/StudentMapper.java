@@ -1,6 +1,5 @@
 package org.oasis.springbootdemo.dao;
 
-import org.apache.ibatis.annotations.MapKey;
 import org.apache.ibatis.annotations.Param;
 import org.oasis.springbootdemo.model.StudentVO;
 import org.oasis.springbootdemo.model.generated.Student;
